@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ActionBar</string>
+
+    <string-array name="country">
+
+        <item> Bangladesh </item>
+        <item> USA </item>
+        <item> SriLanka </item>
+        <item> Pakistan </item>
+        <item> Canada </item>
+        <item> Germany </item>
+        <item> China </item>
+        <item> Soudi Arob </item>
+        <item> London </item>
+        <item> America </item>
+        <item> Bangladesh </item>
+
+    </string-array>
+
+</resources>
