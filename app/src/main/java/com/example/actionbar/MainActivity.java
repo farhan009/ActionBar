@@ -27,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         this.setTitle("Country Names");
 
+        // Adding image on Action Bar
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.title);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+
         listView = findViewById(R.id.listView_id);
         country = getResources().getStringArray(R.array.country);
 
