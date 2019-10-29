@@ -3,11 +3,13 @@ package com.example.actionbar;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
@@ -30,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
 
         arrayAdapter = new ArrayAdapter(MainActivity.this, R.layout.sample_view, R.id.textView_id, country);
         listView.setAdapter(arrayAdapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Intent intent = new Intent(MainActivity.this, WelcomePage.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
